@@ -5,8 +5,8 @@ You can use the [editor on GitHub](https://github.com/Sue-h18/Sue-h18.github.io/
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+苏
+Markdown是一种轻巧且易于使用的语法，可用于样式化文字。它包括以下约定
 
 ```markdown
 Syntax highlighted code block
