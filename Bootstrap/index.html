@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./lib/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Bootstrap4响应式开发--苏鹏</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- 头部 begin -->
+  <header id="lk_header">
+    <!-- 上部分 -->
+    <div class="top-bar d-none d-sm-none d-md-none d-lg-block text-center text-muted">
+      <div class="container">
+        <div class="row">
+          <div class="top-bar-1 col-md-2">
+            <a href="" class="text-muted">
+              <i class="icon-phone fa fa-mobile-phone fa-lg"></i>
+              <span>关注微信号</span>
+              <img src="img/muqishan06.png" alt="" style="width:120px;">
+            </a>
+          </div>
+          <div class="top-bar-2 col-md-5">
+            <i class="fa fa-phone fa-lg"></i>
+            <span>150-7166-6707(服务时间:9:00-21:00)</span>
+          </div>
+          <div class="top-bar-3 col-md-2">
+            <a href="" class="text-muted">校企合作</a>
+            <a href="" class="text-muted">培训师</a>
+          </div>
+          <div class=" top-bar-4 col-md-3">
+            <a href="" class="btn btn-success btn-sm">免费注册</a>
+            <a href="" class="text-muted ml-2">立即登录</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 下部分 -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-lk">
+      <div class="container">
+        <a class="navbar-brand d-flex justify-content-center" href="#">
+          <img src="img/sue_logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#lk_nav" aria-controls="lk_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="lk_nav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                学科学习
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">服务体系</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">软件工具</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">专题学习</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">就业指导</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 头部 end -->
+
+  <!-- 轮播图 begin -->
+  <section id="lk_carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#lk_carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#lk_carousel" data-slide-to="1"></li>
+      <li data-target="#lk_carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-sm-img="img/s-default.png" data-lg-img="img/default.png">
+      </div>
+      <div class="carousel-item" data-sm-img="img/s-丛林宇航员.jpg" data-lg-img="img/丛林宇航员.jpg">
+      </div>
+      <div class="carousel-item" data-sm-img="img/s-杰古沙龙冰河湖冰岛.jpg" data-lg-img="img/杰古沙龙冰河湖冰岛.jpg">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#lk_carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#lk_carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </section>
+  <!-- 轮播图 end -->
+
+  <!-- 热门课程 begin -->
+  <section id="lk_hot">
+    <!-- 标题 -->
+    <div class="text-center mt-3 mb-3">
+      <h2><strong>热门课程</strong></h2>
+      <i class="fa fa-star-o fa-lg"></i><i class="fa fa-star-half-empty fa-lg"></i><i class="fa fa-star fa-lg"></i>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="media d-flex align-items-center m1 mb-3 bg-light p-2">
+            <img src="./img/报名用.jpg" class="align-self-center mr-3 rounded-circle img-fluid img-thumbnail" width="100"
+              alt="...">
+            <div class="media-body">
+              <h6 class="media-heading">
+                <span class="text-danger">[热]</span>
+                H5+C3从入门到精通
+              </h6>
+              <p class="text-muted">8大案例全称驱动教学</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="media d-flex align-items-center m1 mb-3 bg-light p-2">
+            <img src="./img/报名用.jpg" class="align-self-center mr-3 rounded-circle img-fluid img-thumbnail" width="100"
+              alt="...">
+            <div class="media-body">
+              <h6 class="media-heading">
+                <span class="text-danger">[热]</span>
+                H5+C3从入门到精通
+              </h6>
+              <p class="text-muted">8大案例全称驱动教学</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="media d-flex align-items-center m1 mb-3 bg-light p-2">
+            <img src="./img/报名用.jpg" class="align-self-center mr-3 rounded-circle img-fluid img-thumbnail" width="100"
+              alt="...">
+            <div class="media-body">
+              <h6 class="media-heading">
+                <span class="text-danger">[热]</span>
+                H5+C3从入门到精通
+              </h6>
+              <p class="text-muted">8大案例全称驱动教学</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="media d-flex align-items-center m1 mb-3 bg-light p-2">
+            <img src="./img/报名用.jpg" class="align-self-center mr-3 rounded-circle img-fluid img-thumbnail" width="100"
+              alt="...">
+            <div class="media-body">
+              <h6 class="media-heading">
+                <span class="text-danger">[热]</span>
+                H5+C3从入门到精通
+              </h6>
+              <p class="text-muted">8大案例全称驱动教学</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="media d-flex align-items-center m1 mb-3 bg-light p-2">
+            <img src="./img/报名用.jpg" class="align-self-center mr-3 rounded-circle img-fluid img-thumbnail" width="100"
+              alt="...">
+            <div class="media-body">
+              <h6 class="media-heading">
+                <span class="text-danger">[热]</span>
+                H5+C3从入门到精通
+              </h6>
+              <p class="text-muted">8大案例全称驱动教学</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="media d-flex align-items-center m1 mb-3 bg-light p-2">
+            <img src="./img/报名用.jpg" class="align-self-center mr-3 rounded-circle img-fluid img-thumbnail" width="100"
+              alt="...">
+            <div class="media-body">
+              <h6 class="media-heading">
+                <span class="text-danger">[热]</span>
+                H5+C3从入门到精通
+              </h6>
+              <p class="text-muted">8大案例全称驱动教学</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 热门课程 end -->
+
+  <!-- 产品中心 begin -->
+  <section id="lk_product">
+    <div class="container">
+      <div style="overflow:auto;">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true">在线大学</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">会员专享</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+              aria-selected="false">优质视频</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about"
+              aria-selected="false">关于我们</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contacts" role="tab" aria-controls="contacts"
+              aria-selected="false">与我联系</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mustyou" role="tab" aria-controls="mustyou"
+              aria-selected="false">非你莫属</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <!-- 第1部分 -->
+                <div id="pd_one_1" class="mb-4 mt-4">
+                  <a href="#">
+                    <img src="./img/muqishan06.png" alt="" width="140">
+                  </a>
+                  <div class="text-muted ml-2">
+                    <div>更多资讯欢迎</div>
+                    <div>叫我帅哥就好</div>
+                  </div>
+                </div>
+                <!-- 第2部分 -->
+                <div id="pd_one_2" class="breadcrumb lead mb-4">
+                  <strong>HMTL5 + 全栈 / Python + 人工智能 / JavaEE + 大数据</strong>
+                </div>
+                <!-- 第3部分 -->
+                <h1 id="pd_one_3">
+                  <strong>
+                    欢迎来到IT人的在线大学
+                    <span class="text-danger">/</span>
+                    XX学院
+                    <span class="text-danger">/</span>
+                  </strong>
+                </h1>
+                <!-- 第4部分 -->
+                <div id="pd_one_4">
+                  <button class="btn btn-primary btn-lg" type="submit" style="margin-right:10px;">课程咨询</button>
+                  <button class="btn btn-default btn-lg" type="submit">了解更多</button>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <img src="./img/phone.png" alt="" width="350" height="500"
+                  class="d-none d-sm-none d-md-none d-lg-block">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">左边</div>
+              <div class="col-md-8">右边</div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">左边</div>
+              <div class="col-md-6">右边</div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">ab左边</div>
+              <div class="col-md-6">ab右边</div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contacts" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">c左边</div>
+              <div class="col-md-6">c右边</div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="mustyou" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">y左边</div>
+              <div class="col-md-6">y右边</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- 产品中心 end -->
+
+
+  <!-- 关于我们 begin -->
+  <section id="lk_about">
+    <div class="text-center mt-5 mb-5">
+      <h2><strong>关于我们</strong></h2>
+      <i class="fa fa-star-o fa-lg"></i><i class="fa fa-star-half-empty fa-lg"></i><i class="fa fa-star fa-lg"></i>
+    </div>
+
+    <!-- 内容 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 order-2 order-lg-1">
+          <p class="text-muted">学IT必须学习多行业、多领域、有深度的真项目课程。传智除独立课研团队自研以外也与华为、阿里、亚马逊、百度等名企深度合作</p>
+          <p class="text-muted">每年斥资亿元投入全场景、全行业项目课程研发，制定IT培训行业“真“项目标准，并在业内首家建立可免费体验的在线“项目库”</p>
+          <p class="text-muted">14年不忘初心，向千万学子免费分享IT培训学习资源，视频教程已发布10万余节，年均下载及播放量4000万余次</p>
+        </div>
+        <div class="col-lg-4 order-1 mb-3 order-lg-1 mb-lg-0">
+          <img src="./img/about.jpg" alt="" class="img-fluid img-thumbnail">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 关于我们 end -->
+
+  <!-- 友情链接 begin -->
+  <section id="lk_link" class="d-none d-md-none d-lg-block">
+    <div class="text-center mt-5 mb-5 ">
+      <h2><strong>友情链接</strong></h2>
+      <i class="fa fa-star-o fa-lg"></i><i class="fa fa-star-half-empty fa-lg"></i><i class="fa fa-star fa-lg"></i>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row d-flex justify-content-center align-items-center">
+        <img src="./img/babeljs.png" alt="" width="100">
+        <img src="./img/vuejs.png" alt="" width="100">
+        <img src="./img/nextjs.png" alt="" width="100">
+        <img src="./img/nodejs.png" alt="" width="100">
+        <img src="./img/react.png" alt="" width="100">
+        <img src="./img/svelte.png" alt="" width="100">
+        <img src="./img/typescript.png" alt="" width="100">
+        <img src="./img/yarn.png" alt="" width="100">
+        <img src="./img/npm.png" alt="" width="100">
+        <img src="./img/nuxtjs.png" alt="" width="100">
+      </div>
+    </div>
+
+  </section>
+  <!-- 友情链接 end -->
+
+  <!-- 尾部 begin -->
+  <section id="lk_footer">
+    <div class="container">
+      <div class="row  d-flex align-items-center justify-content-center">
+        <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block">
+          <div class="row  d-flex align-items-center justify-content-center">
+            <ul class="offset-lg-4 col-lg-4">
+              <li>关于我们</li>
+              <li>课程介绍</li>
+              <li>热门课程</li>
+            </ul>
+            <ul class="col-lg-4">
+              <li>名师授课</li>
+              <li>追求卓越</li>
+              <li>走向成功</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 text-center">
+          <h6>公司地址：武穴市xxxxxxxxx</h6>
+          <h6>联系电话：8888888</h6>
+          <h6>地址邮箱：13283xxxx6@qq.com</h6>
+        </div>
+        <div class="col-md-6 col-lg-3  d-none d-md-block d-sm-none d-lg-block">
+          <h6>联系我们:</h6>
+          <a href="">
+            <img src="./img/tippyjs.png" alt="" width="50" data-toggle="tooltip" data-placement="bottom" title="weixin">
+            <img src="./img/deno.png" alt="" width="50" data-toggle="tooltip" data-placement="bottom" title="QQ">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 尾部 end -->
+
+
+
+
+  <script src="./lib/js/jquery.slim.min.js"></script>
+  <script src="./lib/js/popper.min.js"></script>
+  <script src="lib/js/bootstrap.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
